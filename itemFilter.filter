@@ -1,0 +1,280 @@
+# Script edited with Filtration - https://github.com/ben-wallis/Filtration
+
+
+# Quest Item
+Show
+    Class "Quest Items"
+
+# Cards
+Show
+    Class "Divination Card"
+    SetTextColor 95 158 160
+    SetBorderColor 95 158 160
+    SetFontSize 45
+	PlayAlertSound 1 300
+
+Show
+    BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Glassblower's Bauble" "Cartographer's Chisel"
+    SetTextColor 255 255 119
+    SetBorderColor 255 255 255
+
+Show
+    BaseType "Orb of Augmentation" "Orb of Transmutation" "Orb of Alteration" "Jeweller's Orb" "Orb of Chance" "Chromatic Orb"
+    SetTextColor 255 255 119
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 255 119
+
+Show
+    BaseType "Orb of Alchemy" "Blessed Orb" "Orb of Scouring" "Orb of Fusing"
+    SetTextColor 255 255 119
+    SetBorderColor 255 255 119
+    SetFontSize 40
+	PlayAlertSound 4 300
+
+Show
+    BaseType "Regal Orb" "Chaos Orb" "Orb of Regret" "Gemcutter's Prism" "Vaal Orb"
+    SetTextColor 255 255 119
+    SetBorderColor 255 255 119
+    SetFontSize 45
+	PlayAlertSound 3 300
+
+Show
+    BaseType "Mirror of Kalandra" "Exalted Orb" "Eternal Orb" "Divine Orb"
+    SetTextColor 255 255 119
+    SetBorderColor 255 255 119
+    SetFontSize 45
+	PlayAlertSound 1 300
+
+# Shows Uniques
+Show
+    Rarity = Unique
+	SetFontSize 38
+	PlayAlertSound 5 300
+
+# Sockets
+Show
+    LinkedSockets = 6
+    SetTextColor 30 144 255
+    SetBackgroundColor 0 0 0
+    SetBorderColor 30 144 255
+    SetFontSize 40
+	PlayAlertSound 1 300
+
+Show
+    LinkedSockets = 5
+    SetTextColor 210 0 0
+    SetBackgroundColor 0 0 0
+    SetBorderColor 210 0 0
+    SetFontSize 40
+	PlayAlertSound 1 300
+
+Show
+    Sockets = 6
+    SetTextColor 0 128 64
+    SetBorderColor 0 128 64
+	PlayAlertSound 1 300
+
+Show
+    SocketGroup "RGB"
+    SetTextColor 255 192 203
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 192 203
+
+# Jewels 
+Show
+    Class "Jewel"
+    SetBorderColor 128 64 64
+    SetFontSize 60
+
+# Rare Items
+Show
+    ItemLevel >= 75
+    Rarity = Rare
+    SetTextColor 255 249 51
+    SetBorderColor 30 144 255
+
+Show
+    ItemLevel >= 60
+    Rarity = Rare
+    SetTextColor 255 255 0
+    SetBorderColor 255 255 0
+
+Show
+    ItemLevel <= 55
+    Rarity = Rare
+    SetTextColor 255 255 0
+
+Show
+    Rarity = Rare
+
+# Shows Certain Magic Base items Higher than 75
+Show
+    ItemLevel >= 75
+    Rarity = Magic
+    BaseType "Leather Belt" "Rustic Sash" "Amber Amulet" "Lapis Amulet" "Agate Amulet" "Gold Amulet" "Onyx Amulet" "Amethyst Ring" "Two-Stone Ring" "Gold Ring"
+    SetTextColor 136 136 255
+    SetBorderColor 0 128 0
+	
+# Shows Magic Amulets up to Maps
+Show
+    ItemLevel <= 68
+    Rarity = Magic
+    Class "Amulets"
+
+# Shows Magic Rings up to Maps
+Show
+    ItemLevel <= 68
+    Rarity = Magic
+    Class "Rings"
+	
+# Shows Magic Belts up to Maps
+Show
+    ItemLevel <= 68
+    Rarity = Magic
+    Class "Belts"
+
+Hide
+    ItemLevel <= 67
+    Class "Amulets"
+
+Hide
+    ItemLevel <= 67
+    Class "Belts"
+
+Hide
+    ItemLevel <= 67
+    Class "Rings"
+	
+# Shows Alch'able white accessories
+Show
+    ItemLevel <= 71
+    Rarity = Normal
+    Class "Amulets"
+    SetTextColor 200 200 200
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 255 255
+
+Show
+    ItemLevel <= 71
+    Rarity = Normal
+    Class "Belts"
+    SetTextColor 200 200 200
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 255 255
+
+Show
+    ItemLevel <= 71
+    Rarity = Normal
+    Class "Rings"
+    SetTextColor 200 200 200
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 255 255
+
+Show
+    ItemLevel <= 74
+    Rarity = Normal
+    Class "Amulets"
+    SetTextColor 173 216 230
+    SetBackgroundColor 0 0 0
+    SetBorderColor 173 216 230
+
+Show
+    ItemLevel <= 74
+    Rarity = Normal
+    Class "Belts"
+    SetTextColor 173 216 230
+    SetBackgroundColor 0 0 0
+    SetBorderColor 173 216 230
+
+Show
+    ItemLevel <= 74
+    Rarity = Normal
+    Class "Rings"
+    SetTextColor 173 216 230
+    SetBackgroundColor 0 0 0
+    SetBorderColor 173 216 230
+
+Show
+    ItemLevel >= 75
+    Rarity = Normal
+    Class "Amulets"
+    SetTextColor 0 150 0
+    SetBackgroundColor 0 0 0
+    SetBorderColor 0 150 0
+
+Show
+    ItemLevel >= 75
+    Rarity = Normal
+    Class "Belts"
+    SetTextColor 0 150 0
+    SetBackgroundColor 0 0 0
+    SetBorderColor 0 150 0
+
+Show
+    ItemLevel >= 75
+    Rarity = Normal
+    Class "Rings"
+    SetTextColor 0 150 0
+    SetBackgroundColor 0 0 0
+    SetBorderColor 0 150 0
+
+# Gems
+Show
+    Quality >= 1
+    Class "Gems"
+    SetBorderColor 0 128 128
+
+Show
+    Class "Gems"
+
+# Highlights Quality Flasks over 5%
+Show
+    Quality >= 5
+    Class "Flask"
+    SetBorderColor 0 236 255
+
+Show
+    Class "Flask"
+
+# Maps
+Show
+    Class "Maps"
+    SetTextColor 255 20 147
+    SetBorderColor 255 20 147
+    SetFontSize 45
+
+Show
+    Class "Map Fragments"
+    SetTextColor 255 20 147
+    SetBorderColor 255 20 147
+    SetFontSize 45
+
+# Misc
+Show
+    BaseType "Fishing Rod" "Albino Rhoa Feather"
+    SetBorderColor 255 128 0
+    SetFontSize 45
+    PlayAlertSound 3 100
+
+# Chanceable Bases 
+Show
+    Rarity = Normal
+    BaseType "Mind Cage" "Occultist's Vestment" "Leather Belt" "Amber Amulet" "Lapis Amulet" "Agate Amulet" "Amethyst Ring" "Prophecy Wand" "Imperial Bow" "Spine Bow" "Void Sceptre" "Judgement Staff" "Sapphire Flask" "Desert Brigandine" "Full Wyrmscale" "Varnished Coat" "Champion Kite Shield" "Titanium Spirit Shield" "Sinner Tricorne"
+    SetBorderColor 255 0 0
+
+# Chisel Recipe
+Show
+    Rarity = Normal
+    BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+    SetBorderColor 89 255 172
+
+# Shows items with itemlevel lesser equal than 30 (For leveling purpose)
+Show
+    ItemLevel <= 45
+    Rarity = Magic
+
+Show
+    ItemLevel <= 32
+    Rarity = Normal
+
+Hide
